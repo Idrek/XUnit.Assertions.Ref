@@ -2,6 +2,26 @@
 
 Commit: [c27a91f8cbcee37cb45699a3a81287bca225e876](https://github.com/xunit/xunit/tree/c27a91f8cbcee37cb45699a3a81287bca225e876)
 
+## Summary
+
+- [Boolean asserts](https://github.com/Idrek/XUnit.Assertions.Ref#boolean-asserts)
+- [Collection asserts](https://github.com/Idrek/XUnit.Assertions.Ref#collection-asserts)
+- [Equality asserts](https://github.com/Idrek/XUnit.Assertions.Ref#equality-asserts)
+- [Equivalence asserts](https://github.com/Idrek/XUnit.Assertions.Ref#equivalence-asserts)
+- [Event asserts](https://github.com/Idrek/XUnit.Assertions.Ref#event-asserts)
+- [Exception asserts](https://github.com/Idrek/XUnit.Assertions.Ref#exception-asserts)
+- [Fail asserts](https://github.com/Idrek/XUnit.Assertions.Ref#fail-asserts)
+- [Identity asserts](https://github.com/Idrek/XUnit.Assertions.Ref#identity-asserts)
+- [Multiple asserts](https://github.com/Idrek/XUnit.Assertions.Ref#multiple-asserts)
+- [Null asserts](https://github.com/Idrek/XUnit.Assertions.Ref#null-asserts)
+- [Property asserts](https://github.com/Idrek/XUnit.Assertions.Ref#property-asserts)
+- [Range asserts](https://github.com/Idrek/XUnit.Assertions.Ref#range-asserts)
+- [Set asserts](https://github.com/Idrek/XUnit.Assertions.Ref#set-asserts)
+- [Skip asserts](https://github.com/Idrek/XUnit.Assertions.Ref#skip-asserts)
+- [String/Span/Memory asserts](https://github.com/Idrek/XUnit.Assertions.Ref#stringspanmemory-asserts)
+- [Regex asserts](https://github.com/Idrek/XUnit.Assertions.Ref#regex-asserts)
+- [Type asserts](https://github.com/Idrek/XUnit.Assertions.Ref#type-asserts)
+
 ## Boolean asserts
 
 ```Assert.True(expression)``` 
