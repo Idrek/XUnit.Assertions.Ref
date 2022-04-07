@@ -5,34 +5,91 @@ Commit: [c27a91f8cbcee37cb45699a3a81287bca225e876](https://github.com/xunit/xuni
 ## Summary
 
 - [Boolean asserts](https://github.com/Idrek/XUnit.Assertions.Ref#boolean-asserts)
+  - [True](#true)
+  - [False](#false)
 - [Collection asserts](https://github.com/Idrek/XUnit.Assertions.Ref#collection-asserts)
+  - [All](#all)
+  - [AllAsync](#all-async)
+  - [Collection](#collection)
+  - [CollectionAsync](#collection-async)
+  - [Contains](#contains)
+  - [Distinct](#distinct)
+  - [DoesNotContain](#does-not-contain)
+  - [Empty](#empty)
+  - [NotEmpty](#not-empty)
+  - [Single](#single)
 - [Equality asserts](https://github.com/Idrek/XUnit.Assertions.Ref#equality-asserts)
+  - [Equal](#equal)
+  - [StrictEqual](#strict-equal)
+  - [NotEqual](#not-equal)
+  - [NotStrictEqual](#not-strict-equal)
 - [Equivalence asserts](https://github.com/Idrek/XUnit.Assertions.Ref#equivalence-asserts)
+  - [Equivalent](#equivalent)
 - [Event asserts](https://github.com/Idrek/XUnit.Assertions.Ref#event-asserts)
+  - [Raises](#raises)
+  - [RaisesAny](#raises-any)
+  - [RaisesAsync](#raises-async)
+  - [RaisesAnyAsync](#raises-any-async)
 - [Exception asserts](https://github.com/Idrek/XUnit.Assertions.Ref#exception-asserts)
+  - [Throws](#throws)
+  - [ThrowsAsync](#throws-async)
+  - [ThrowsAny](#throws-any)
+  - [ThrowsAnyAsync](#throws-any-async)
 - [Fail asserts](https://github.com/Idrek/XUnit.Assertions.Ref#fail-asserts)
+  - [Fail](#fail)
 - [Identity asserts](https://github.com/Idrek/XUnit.Assertions.Ref#identity-asserts)
+  - [Same](#same)
+  - [NotSame](#not-same)
 - [Multiple asserts](https://github.com/Idrek/XUnit.Assertions.Ref#multiple-asserts)
+  - [Multiple](#multiple)
 - [Null asserts](https://github.com/Idrek/XUnit.Assertions.Ref#null-asserts)
+  - [Null](#null)
+  - [NotNull](#not-null)
 - [Property asserts](https://github.com/Idrek/XUnit.Assertions.Ref#property-asserts)
+  - [PropertyChanged](#property-changed)
+  - [PropertyChangedAsync](#property-changed-async)
 - [Range asserts](https://github.com/Idrek/XUnit.Assertions.Ref#range-asserts)
+  - [InRange](#in-range)
+  - [NotInRange](#not-in-range)
 - [Set asserts](https://github.com/Idrek/XUnit.Assertions.Ref#set-asserts)
+  - [Subset](#subset)
+  - [ProperSubset](@proper-subset)
+  - [Superset](#superset)
+  - [ProperSuperset](#proper-superset)
 - [Skip asserts](https://github.com/Idrek/XUnit.Assertions.Ref#skip-asserts)
+  - [Skip](#skip)
+  - [SkipUnless](#skip-unless)
+  - [SkipWhen](#skip-when)
 - [String/Span/Memory asserts](https://github.com/Idrek/XUnit.Assertions.Ref#stringspanmemory-asserts)
+  - [StartsWith](#starts-with)
+  - [EndsWith](#ends-with)
 - [Regex asserts](https://github.com/Idrek/XUnit.Assertions.Ref#regex-asserts)
+  - [Matches](#matches)
+  - [DoesNotMatch](#does-not-match)
 - [Type asserts](https://github.com/Idrek/XUnit.Assertions.Ref#type-asserts)
+  - [IsAssignableFrom](#is-assignable-from)
+  - [IsNotType](#is-not-type)
+  - [IsType](#is-type)
 
 ## Boolean asserts
 
-```Assert.True(expression)``` 
+<a id="true"></a>
+
+`Assert.True(expression)`
+
   - [TrueTests](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v1.tests/xunit/TrueTests.cs)
   - [BooleanAssertsTests/True](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v3.assert.tests/Asserts/BooleanAssertsTests.cs#L58)
 
-```Assert.False(expression)``` 
+<a id="false"></a>
+
+`Assert.False(expression)`
+
   - [FalseTests](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v1.tests/xunit/FalseTests.cs)
   - [BooleanAssertsTests/False](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v3.assert.tests/Asserts/BooleanAssertsTests.cs#L7)
 
 ## Collection asserts
+
+<a id="all"></a>
 
 `Assert.All<T>(collection, predicate)`
 
@@ -40,11 +97,15 @@ Commit: [c27a91f8cbcee37cb45699a3a81287bca225e876](https://github.com/xunit/xuni
 
   - [CollectionAssertsTests/All](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v3.assert.tests/Asserts/CollectionAssertsTests.cs#L16)
 
+<a id="all-async"></a>
+
 `Assert.AllAsync<T>(collection, predicate)`
 
 `Assert.AllAsync(collection, predicate)`
 
   - [CollectionAssertsTests/AllAsync](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v3.assert.tests/Asserts/CollectionAssertsTests.cs#L89)
+
+<a id="collection"></a>
 
 `Assert.Collection(collection)`
 
@@ -52,11 +113,15 @@ Commit: [c27a91f8cbcee37cb45699a3a81287bca225e876](https://github.com/xunit/xuni
 
   - [CollectionAssertsTests/Collection](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v3.assert.tests/Asserts/CollectionAssertsTests.cs#L182)
 
+<a id="collection-async"></a>
+
 `Assert.CollectionAsync(collection)`
 
 `Assert.CollectionAsync(collection, predicate1, ..., predicateN)`
 
   - [CollectionAssertsTests/CollectionAsync](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v3.assert.tests/Asserts/CollectionAssertsTests.cs#L254)
+
+<a id="contains"></a>
 
 `Assert.Contains(element, collection)`
 
@@ -72,6 +137,8 @@ Commit: [c27a91f8cbcee37cb45699a3a81287bca225e876](https://github.com/xunit/xuni
 
   - [CollectionAssertsTests/Contains_WithPredicate](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v3.assert.tests/Asserts/CollectionAssertsTests.cs#L521)
 
+<a id="distinct"></a>
+
 `Assert.Distinct(collection)`
 
 `Assert.Distinct<T>(collection)`
@@ -79,6 +146,8 @@ Commit: [c27a91f8cbcee37cb45699a3a81287bca225e876](https://github.com/xunit/xuni
 `Assert.Distinct(collection, comparer)`
 
   - [CollectionAssertsTests/Distinct](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v3.assert.tests/Asserts/CollectionAssertsTests.cs#L547)
+
+<a id="does-not-contain"></a>
 
 `Assert.DoesNotContain(element, collection)`
 
@@ -92,13 +161,19 @@ Commit: [c27a91f8cbcee37cb45699a3a81287bca225e876](https://github.com/xunit/xuni
 
   - [CollectionAssertsTests/DoesNotContain_WithPredicate](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v3.assert.tests/Asserts/CollectionAssertsTests.cs#L802)
 
+<a id="empty"></a>
+
 `Assert.Empty(collection)`
 
   - [CollectionAssertsTests/Empty](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v3.assert.tests/Asserts/CollectionAssertsTests.cs#L828)
 
+<a id="not-empty"></a>
+
 `Assert.NotEmpty(collection)`
 
   - [CollectionAssertsTests/NotEmpty](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v3.assert.tests/Asserts/CollectionAssertsTests.cs#L1083)
+
+<a id="single"></a>
 
 `Assert.Single(collection)`
 
@@ -119,6 +194,8 @@ Commit: [c27a91f8cbcee37cb45699a3a81287bca225e876](https://github.com/xunit/xuni
   - [CollectionAssertsTests/Single_Generic_WithPredicate](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v3.assert.tests/Asserts/CollectionAssertsTests.cs#L1320)
 
 ## Equality asserts
+
+<a id="equal"></a>
 
 `Assert.Equal(expected, actual)`
 
@@ -150,9 +227,13 @@ Commit: [c27a91f8cbcee37cb45699a3a81287bca225e876](https://github.com/xunit/xuni
 
   - [EqualityAssertsTests/Equal_Float](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v3.assert.tests/Asserts/EqualityAssertsTests.cs#L900)
 
+<a id="strict-equal"></a>
+
 `Assert.StrictEqual(expected, actual)`
 
   - [EqualityAssertsTests/StrictEqual](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v3.assert.tests/Asserts/EqualityAssertsTests.cs#L967)
+
+<a id="not-equal"></a>
 
 `Assert.NotEqual(expected, actual)`
 
@@ -172,11 +253,15 @@ Commit: [c27a91f8cbcee37cb45699a3a81287bca225e876](https://github.com/xunit/xuni
 
   - [EqualityAssertsTests/NotEqual_Double](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v3.assert.tests/Asserts/EqualityAssertsTests.cs#L1168)
 
+<a id="not-strict-equal"></a>
+
 `Assert.NotStrictEqual(expected, actual)`
 
   - [EqualityAssertsTests/NotStrictEqual](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v3.assert.tests/Asserts/EqualityAssertsTests.cs#L1190)
 
 ## Equivalence asserts
+
+<a id="equivalent"></a>
 
 `Assert.Equivalent(expected, actual)`
 
@@ -186,17 +271,25 @@ Commit: [c27a91f8cbcee37cb45699a3a81287bca225e876](https://github.com/xunit/xuni
 
 ## Event asserts
 
+<a id="raises"></a>
+
 `Assert.Raises<T>(predicate1, predicate2, predicate3)`
 
   - [EventAssertsTests/Raises_Generic](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v3.assert.tests/Asserts/EventAssertsTests.cs#L8)
+
+<a id="raises-any"></a>
 
 `Assert.RaisesAny<T>(predicate1, predicate2, predicate3)`
 
   - [EventAssertsTests/RaisesAny_Generic](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v3.assert.tests/Asserts/EventAssertsTests.cs#L59)
 
+<a id="raises-async"></a>
+
 `Assert.RaisesAsync<T>(predicate1, predicate2, predicate3)`
 
   - [EventAssertsTests/RaisesAsync_Generic](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v3.assert.tests/Asserts/EventAssertsTests.cs#L162)
+
+<a id="raises-any-async"></a>
 
 `Assert.RaisesAnyAsync<T>(predicate1, predicate2, predicate3)`
 
@@ -204,25 +297,35 @@ Commit: [c27a91f8cbcee37cb45699a3a81287bca225e876](https://github.com/xunit/xuni
 
 ## Exception asserts
 
+<a id="throws"></a>
+
 `Assert.Throws<E>(predicate)`
-
-`Assert.ThrowsAsync<E>(predicate)`
-
-`Assert.ThrowsAny<E>(predicate)`
-
-`Assert.ThrowsAnyAsync<E>(predicate)`
 
 `Assert.Throws(exceptionType, predicate)`
 
-`Assert.ThrowsAsync(exceptionType, predicate)`
-
 `Assert.Throws<E>(paramName, predicate)`
 
+<a id="throws-async"></a>
+
+`Assert.ThrowsAsync<E>(predicate)`
+
+`Assert.ThrowsAsync(exceptionType, predicate)`
+
 `Assert.ThrowsAsync<E>(paramName, predicate)`
+
+<a id="throws-any"></a>
+
+`Assert.ThrowsAny<E>(predicate)`
+
+<a id="throws-any-async"></a>
+
+`Assert.ThrowsAnyAsync<E>(predicate)`
 
   - [ExceptionAssertsTests](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v3.assert.tests/Asserts/ExceptionAssertsTests.cs#L7)
 
 ## Fail asserts
+
+<a id="fail"></a>
 
 `Assert.Fail(message)`
 
@@ -230,11 +333,15 @@ Commit: [c27a91f8cbcee37cb45699a3a81287bca225e876](https://github.com/xunit/xuni
 
 ## Identity asserts
 
+<a id="same"></a>
+
 `Assert.Same(expected, actual)`
 
   - [SameTests](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v1.tests/xunit/SameTests.cs)
 
   - [IdentityAssertsTests/Same](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v3.assert.tests/Asserts/IdentityAssertsTests.cs#L26)  
+
+<a id="not-same"></a>
 
 `Assert.NotSame(expected, actual)`
 
@@ -244,6 +351,8 @@ Commit: [c27a91f8cbcee37cb45699a3a81287bca225e876](https://github.com/xunit/xuni
 
 ## Multiple asserts
 
+<a id="multiple"></a>
+
 `Assert.Multiple()`
 
 `Assert.Multiple(predicate1, ..., predicateN)`
@@ -252,11 +361,15 @@ Commit: [c27a91f8cbcee37cb45699a3a81287bca225e876](https://github.com/xunit/xuni
 
 ## Null asserts
 
+<a id="null"></a>
+
 `Assert.Null(expression)`
 
   - [NullTests](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v1.tests/xunit/NullTests.cs)
 
   - [NullAssertsTests/Null](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v3.assert.tests/Asserts/NullAssertsTests.cs#L25)
+
+<a id="not-null"></a>
 
 `Assert.NotNull(expression)`
 
@@ -266,17 +379,23 @@ Commit: [c27a91f8cbcee37cb45699a3a81287bca225e876](https://github.com/xunit/xuni
 
 ## Property asserts
 
+<a id="propert-changed"></a>
+
 `Assert.PropertyChanged(element, property, predicate)`
 
   - [PropertyChangedTests](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v1.tests/xunit/PropertyChangedTests.cs)
 
   - [PropertyAssertsTests/PropertyChanged](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v3.assert.tests/Asserts/PropertyAssertsTests.cs#L9)
 
+<a id="property-changed-async"></a>
+
 `Assert.PropertyChangedAsync(element, property, predicate)`
 
   - [PropertyAssertsTests/PropertyChangedAsync](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v3.assert.tests/Asserts/PropertyAssertsTests.cs#L80)
 
 ## Range asserts
+
+<a id="in-range"></a>
 
 `Assert.InRange(value, minRange, maxRange)`
 
@@ -285,6 +404,8 @@ Commit: [c27a91f8cbcee37cb45699a3a81287bca225e876](https://github.com/xunit/xuni
   - [InRangeTests](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v1.tests/xunit/InRangeTests.cs)
 
   - [RangeAssertsTests](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v3.assert.tests/Asserts/RangeAssertsTests.cs)
+
+<a id="not-in-range"></a>
 
 `Assert.NotInRange(value, minRange, maxRange)`
 
@@ -296,17 +417,25 @@ Commit: [c27a91f8cbcee37cb45699a3a81287bca225e876](https://github.com/xunit/xuni
 
 ## Set asserts
 
+<a id="subset"></a>
+
 `Assert.Subset(expected, actual)`
 
   - [SetAssertsTests/Subset](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v3.assert.tests/Asserts/SetAssertsTests.cs#L8)
+
+<a id="proper-subset"></a>
 
 `Assert.ProperSubset(expected, actual)`
 
   - [SetAssertsTests/ProperSubset](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v3.assert.tests/Asserts/SetAssertsTests.cs#L52)
 
+<a id="superset"></a>
+
 `Assert.Superset(expected, actual)`
 
   - [SetAssertsTests/Superset](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v3.assert.tests/Asserts/SetAssertsTests.cs#L96)
+
+<a id="proper-superset"></a>
 
 `Assert.ProperSuperset(expected, actual)`
 
@@ -314,9 +443,15 @@ Commit: [c27a91f8cbcee37cb45699a3a81287bca225e876](https://github.com/xunit/xuni
 
 ## Skip asserts
 
+<a id="skip"></a>
+
 `Assert.Skip(testExpression)`
 
+<a id="skip-unless"></a>
+
 `Assert.SkipUnless(boolExpression, testExpression)`
+
+<a id="skip-when"></a>
 
 `Assert.SkipWhen(boolExpression, testExpression)`
 
@@ -324,9 +459,13 @@ Commit: [c27a91f8cbcee37cb45699a3a81287bca225e876](https://github.com/xunit/xuni
 
 ## String/Span/Memory asserts
 
+<a id="starts-with"></a>
+
 `Assert.StartsWith(search, text)`
 
 `Assert.StartsWith(search, text, comparison)`
+
+<a id="ends-with"></a>
 
 `Assert.EndsWith(search, text)`
 
@@ -340,7 +479,11 @@ Commit: [c27a91f8cbcee37cb45699a3a81287bca225e876](https://github.com/xunit/xuni
 
 ## Regex asserts
 
+<a id="matches"></a>
+
 `Assert.Matches(match, text)`
+
+<a id="does-not-match"></a>
 
 `Assert.DoesNotMatch(match, text)`
 
@@ -348,17 +491,23 @@ Commit: [c27a91f8cbcee37cb45699a3a81287bca225e876](https://github.com/xunit/xuni
 
 ## Type asserts
 
+<a id="is-assignable-from"></a>
+
 `Assert.IsAssignableFrom(type, expression)`
 
 `Assert.IsAssignableFrom<T>(expression)`
 
   - [IsAssignableFromTests](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v1.tests/xunit/IsAssignableFromTests.cs)
 
+<a id="is-not-type"></a>
+
 `Assert.IsNotType(type, expression)`
 
 `Assert.IsNotType<T>(expression)`
 
   - [IsNotTypeTests](https://github.com/xunit/xunit/blob/c27a91f8cb/src/xunit.v1.tests/xunit/IsNotTypeTests.cs)
+
+<a id="is-type"></a>
 
 `Assert.IsType(type, expression)`
 
