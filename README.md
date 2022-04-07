@@ -4,10 +4,15 @@ Commit: [c27a91f8cbcee37cb45699a3a81287bca225e876](https://github.com/xunit/xuni
 
 ## Summary
 
-- [Boolean asserts](https://github.com/Idrek/XUnit.Assertions.Ref#boolean-asserts)
+<details><summary>Boolean asserts</summary>
+
   - [True](#true)
   - [False](#false)
-- [Collection asserts](https://github.com/Idrek/XUnit.Assertions.Ref#collection-asserts)
+
+</details>
+
+<details><summary>Collection asserts</summary>
+
   - [All](#all)
   - [AllAsync](#all-async)
   - [Collection](#collection)
@@ -18,58 +23,121 @@ Commit: [c27a91f8cbcee37cb45699a3a81287bca225e876](https://github.com/xunit/xuni
   - [Empty](#empty)
   - [NotEmpty](#not-empty)
   - [Single](#single)
-- [Equality asserts](https://github.com/Idrek/XUnit.Assertions.Ref#equality-asserts)
+
+</details>
+
+<details><summary>Equality asserts</summary>
+
   - [Equal](#equal)
   - [StrictEqual](#strict-equal)
   - [NotEqual](#not-equal)
   - [NotStrictEqual](#not-strict-equal)
-- [Equivalence asserts](https://github.com/Idrek/XUnit.Assertions.Ref#equivalence-asserts)
+
+</details>
+
+<details><summary>Equivalence asserts</summary>
+  
   - [Equivalent](#equivalent)
-- [Event asserts](https://github.com/Idrek/XUnit.Assertions.Ref#event-asserts)
+
+</details>
+
+<details><summary>Event asserts</summary>
+
   - [Raises](#raises)
   - [RaisesAny](#raises-any)
   - [RaisesAsync](#raises-async)
   - [RaisesAnyAsync](#raises-any-async)
-- [Exception asserts](https://github.com/Idrek/XUnit.Assertions.Ref#exception-asserts)
+
+</details>
+
+<details><summary>Exception asserts</summary>
+
   - [Throws](#throws)
   - [ThrowsAsync](#throws-async)
   - [ThrowsAny](#throws-any)
   - [ThrowsAnyAsync](#throws-any-async)
-- [Fail asserts](https://github.com/Idrek/XUnit.Assertions.Ref#fail-asserts)
+
+</details>
+
+<details><summary>Fail asserts</summary>
+
   - [Fail](#fail)
-- [Identity asserts](https://github.com/Idrek/XUnit.Assertions.Ref#identity-asserts)
+
+</details>
+
+<details><summary>Identity asserts</summary>
+
   - [Same](#same)
   - [NotSame](#not-same)
-- [Multiple asserts](https://github.com/Idrek/XUnit.Assertions.Ref#multiple-asserts)
+
+</details>
+
+<details><summary>Multiple asserts</summary>
+
   - [Multiple](#multiple)
-- [Null asserts](https://github.com/Idrek/XUnit.Assertions.Ref#null-asserts)
+
+</details>
+
+<details><summary>Null asserts</summary>
+
   - [Null](#null)
   - [NotNull](#not-null)
-- [Property asserts](https://github.com/Idrek/XUnit.Assertions.Ref#property-asserts)
+
+</details>
+
+<details><summary>Property asserts</summary>
+
   - [PropertyChanged](#property-changed)
   - [PropertyChangedAsync](#property-changed-async)
-- [Range asserts](https://github.com/Idrek/XUnit.Assertions.Ref#range-asserts)
+
+</details>
+
+<details><summary>Range asserts</summary>
+
   - [InRange](#in-range)
   - [NotInRange](#not-in-range)
-- [Set asserts](https://github.com/Idrek/XUnit.Assertions.Ref#set-asserts)
+
+</details>
+
+<details><summary>Set asserts</summary>
+
   - [Subset](#subset)
   - [ProperSubset](@proper-subset)
   - [Superset](#superset)
   - [ProperSuperset](#proper-superset)
-- [Skip asserts](https://github.com/Idrek/XUnit.Assertions.Ref#skip-asserts)
+
+</details>
+
+<details><summary>Skip asserts</summary>
+
   - [Skip](#skip)
   - [SkipUnless](#skip-unless)
   - [SkipWhen](#skip-when)
-- [String/Span/Memory asserts](https://github.com/Idrek/XUnit.Assertions.Ref#stringspanmemory-asserts)
+
+</details>
+
+<details><summary>String/Span/Memory asserts</summary>
+
   - [StartsWith](#starts-with)
   - [EndsWith](#ends-with)
-- [Regex asserts](https://github.com/Idrek/XUnit.Assertions.Ref#regex-asserts)
+
+</details>
+
+<details><summary>Regex asserts</summary>
+
   - [Matches](#matches)
   - [DoesNotMatch](#does-not-match)
-- [Type asserts](https://github.com/Idrek/XUnit.Assertions.Ref#type-asserts)
+
+</details>
+
+<details><summary>Type asserts</summary>
+
   - [IsAssignableFrom](#is-assignable-from)
   - [IsNotType](#is-not-type)
   - [IsType](#is-type)
+
+</details>
+<hr/><br/>
 
 ## Boolean asserts
 
